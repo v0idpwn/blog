@@ -1,0 +1,24 @@
+<header>
+  <nav class="navigation">
+    <section class="container">
+      <a class="navigation-title" href="{{ .Site.BaseURL }}">
+        <h1 class="title">{{ .Site.Title }}</h1>
+      </a>
+      <ul class="navigation-list float-right">
+        <li class="navigation-item">
+          <a class="navigation-link" href="/">Tags</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="/">Foo</a>
+        </li>
+        {{ with .Site.Menus.main }}
+        {{ range . }}
+        <li class="navigation-item">
+          <a class="navigation-link" href="{{ .URL | relURL }}">{{ .Name }}</a>.
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </section>
+  </nav>
+</header>

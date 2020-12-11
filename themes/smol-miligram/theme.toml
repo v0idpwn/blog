@@ -1,0 +1,17 @@
+name = "smol-milligram"
+license = "MIT"
+licenselink = ""
+description = "Minimal Hugo theme with milligram"
+homepage = ""
+tags = ["blog", "minimal", "monospace", "dark mode", "simple", "clean", "light", "responsive", "fast", "no-js", "no-tracking", "privacy"]
+features = ["blog", "privacy", "responsive", "fast"]
+min_version = "0.20"
+
+[author]
+  name = "v0idpwn"
+  homepage = "github.com/v0idpwn"
+
+[original]
+  name = "morph"
+  homepage = "morph.sh"
+  repo = "https://github.com/colorchestra/smol"

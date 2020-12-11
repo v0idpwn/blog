@@ -1,0 +1,15 @@
+{{ define "main" }}
+	<section class="container">
+		<article>
+			<h2 class="h2 post-title">{{ .Title }}</h2>
+			<time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time>
+		       {{ range .Params.tags }}
+		           <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        	       {{ end }}
+
+			<div class="post-content">
+				{{ .Content }}
+			</div>
+		</article>
+	</section>
+{{ end }}
